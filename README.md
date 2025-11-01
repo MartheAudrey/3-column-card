@@ -25,7 +25,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ### Links
 
 - Solution URL: [Git repository](https://github.com/MartheAudrey/3-column-card.git)
-- Live Site URL: [Card component](https://your-live-site-url.com)
+- Live Site URL: [Card component](https://3-column-card-smoky.vercel.app/)
 
 ## My process
 
