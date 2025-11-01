@@ -1,0 +1,106 @@
+:root{
+ --clr-gold500: hsl(31, 77%, 52%);
+ --clr-cyan800: hsl(184, 100%, 22%);
+ --clr-green950: hsl(179, 100%, 13%);
+
+ /*Neutral colors*/
+ --txt-clr: hsla(0, 0%, 100%, 0.75);
+ --clr-gray100: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    line-height: 1.5;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    background-color: var(--clr-gray100);
+    font-family: "Lexend Deca", sans-serif;
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    gap: 2rem;
+    color: var(--txt-clr);
+    line-height: 1.5;
+}
+
+.wrapper{
+    border: 2px solid white;
+    max-width: 900px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/*Utilities*/
+.section{
+    padding: 2rem;
+    --space: 0.8rem;
+}
+.section h2{
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+    color: var(--clr-gray100);
+    font-size: 2rem;
+    margin-block: var(--space);
+}
+
+.sedans__section{
+    background-color: var(--clr-gold500);
+}
+.sedans__section a{
+    color: var(--clr-gold500);
+}
+
+.suvs__section{
+    background-color: var(--clr-cyan800);
+}
+.suvs__section a{
+    color: var(--clr-cyan800);
+}
+
+.luxury__section{
+    background-color: var(--clr-green950);
+}
+.luxury__section a{
+    color: var(--clr-green950);
+}
+
+.button{
+    background-color: var(--clr-gray100);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: var(--space);
+}
+
+.button:hover{
+    cursor: pointer;
+    color: var(--clr-gray100);
+    border: 2px solid var(--clr-gray100);
+    background-color: transparent;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 30%);}
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;  color: var(--clr-cyan800);}
+
+@media(min-width: 700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .button{
+        margin-top: 5rem;
+    }
+}
